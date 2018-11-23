@@ -6,6 +6,23 @@ h1 {
   font-size: 14vw;
   font-weight: bold;
   color:white;
+  float: left;
+}
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  vertical-align: middle;
+  font-size: 20;
+  color:white;
+  float: left;
+
+}
+p {
+  float: left;
+  font-family: 'Work Sans', sans-serif;
+  vertical-align: middle;
+  font-size: 14px;
+  color:white;
+
 }
 footer{
     font-family: 'Work Sans', sans-serif;
@@ -15,6 +32,12 @@ footer{
     right: 0;
     text-align: center;
     font-size: 30px;
+}
+.storycontainer{
+  margin: 0 auto;
+  width: 500px;
+  height auto;
+
 }
 .footerLinks {
    text-align: center;
@@ -48,6 +71,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+    float: left;
     z-index: -100;
 }
 
@@ -55,7 +79,8 @@ footer{
     position: absolute;
     top: 0;
     bottom: 0;
-
+    float: left;
+    overflow:auto;
     object-fit:cover;
     height: 100%;
     width: 100%;
@@ -63,15 +88,8 @@ footer{
 body {
 	background-color: #000000;
 }
-
-
-@media (max-aspect-ratio: 16/9) {
-  #myVideo {
-    width: auto; /* actually wider than viewport */
-    height: 100%;
-  }
-
 .overlay.fade-in {
+    float: left;
     -webkit-animation: fade-yellow 5s;
     opacity: .5
 }
@@ -82,4 +100,31 @@ body {
     100% {
         opacity: .5;
     }
+}
+
+.overlay.fade-full {
+    float: left;
+    -webkit-animation: fade-full 5s;
+    opacity: 1;
+}
+@-webkit-keyframes fade-full {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bg {
+    /* The image used */
+    background-image:url("newwave.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
