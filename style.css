@@ -4,7 +4,8 @@ h1 {
   vertical-align: middle;
   line-height: normal;
   font-size: 14vw;
-  color:black;
+  font-weight: bold;
+  color:white;
 }
 footer{
     font-family: 'Work Sans', sans-serif;
@@ -47,7 +48,6 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    overflow:hidden;
     z-index: -100;
 }
 
@@ -64,10 +64,6 @@ body {
 	background-color: #000000;
 }
 
-#paradise{
-  font-weight: bold;
-  color:white;
-}
 
 @media (max-aspect-ratio: 16/9) {
   #myVideo {
